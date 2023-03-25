@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shecodes homework</title>
+    <style>
+        h1{
+            padding: 0px;
+            margin: 0 auto;
+            text-align: center;
+            color: blueviolet;
+        }
+        h2{
+            padding:20px;
+            margin:0 auto;
+            text-align: center;
+            border:1px solid blue;
+            border-radius: 10px;
+            
+        }
+        p{
+            line-height: 1.5;
+        }
+        img{
+            margin: 0 auto;
+            display: block;
+            padding: 30px;
+            max-width: 90%;
+            border-radius: 20px;
+        }
+        .learn-more{
+            display: block;
+            margin-top: 20px;
+            text-decoration:none ;
+        }
+        .learn-more:hover{
+            text-decoration: underline;
+
+        }
+        button{
+            display: block;
+            margin:20px auto;
+            padding: 10px 10px 10px 10px;
+            font-size: 20px;
+            background-color:rgb(17, 58, 147) ;
+            color: aquamarine;
+            border-radius: 20px;
+            transition: all 250ms ease-in-out;
+            box-shadow: 10px 10px 10px rgb(07, 05, 0.7);
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: aliceblue;
+       }
+       .coder{
+        display: block;
+        text-align: center;
+    
+       }
+        .content{
+            display: block;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="content">
+    <br>
+    <h1>
+        QUAIL EGGS
+    </h1>
+    <br>
+    <h2>
+        Quail eggs are good for everyone
+    </h2>
+    
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/965/original/quail_eggs.jpeg?1670843209">
+    
+    <p>
+        A single <strong>quail egg</strong> provides a significant chunk of your daily <em>vitamin B12</em>,<em> selenium</em>, 
+       <em> riboflavin</em>, and <em>choline </em>needs, along with some <em>iron</em> — all in a serving that contains
+         only 14 calories. Selenium and riboflavin are important nutrients
+        that help your body break down the food you eat and transform it into energy
+    </p>
+    <a href=" https://www.medicinenet.com/quail_eggs_nutrition_benefits_and_precautions/article.htm" target="_blank" class="learn-more">
+      Learn More
+    </a>
+    
+    <button>
+        Buy Quail Eggs
+    </button>
+     <p class="coder">
+        Built by <a href=" https:/www.shecodes.io/students" target="_blank"> Nwachukwu Perpetua Ugonna</a>
+        
+     </p>
+    </div>
+    <script>
+        function buy(){
+            let name = prompt("What is your name?");
+            let email = prompt ("What is your email address?");
+            let response=prompt ("Have you had a taste of Quail eggs?");
+            if (response === "yes") {
+                alert ("Thank you, " + name + " Eat Quail eggs everyday! " );
+            } else { 
+                alert ("Thank you, " + name+ " make Quail eggs part of your diet!");
+                
+            } 
+        }
+        let buyButton= document.querySelector("Button")
+        buyButton.addEventListener("click", buy);
+
+    </script>
+</body>
+</html>/

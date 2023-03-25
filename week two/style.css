@@ -1,0 +1,35 @@
+h1{
+ display: block;
+ margin: 0 auto;
+ text-align: center;
+ color: blue;
+  padding: 0 0 0 0;
+
+}
+h1:hover{
+   background-color: chartreuse;
+  
+}
+.container{
+   color: black;
+   font-size: medium;
+   font-weight: bold;
+}
+body{
+   background-color: cyan;
+}
+
+.btn{
+   border-radius: 10px;
+   border: 5px;
+   display: block;
+   margin: 0 auto;
+   text-align: right;
+}
+.btn :hover{
+transition: ease-in-out;
+background-color:azure;
+}
+.tuesday :hover{
+   background-color: darkblue;
+}
